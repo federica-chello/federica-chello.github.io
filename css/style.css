@@ -156,4 +156,19 @@ footer i.fa-instagram{
   p{
     text-align: justify;
   }
+  .nav-orizzontale li{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+  }
+  .menu-hamburger{
+    text-align: right;
+    font-size: 25px;
+  }
+  .nav-orizzontale{
+    display: none;
+  }
+  a:focus + .nav-orizzontale {
+    display: block;
+  }
 }
