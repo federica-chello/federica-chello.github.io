@@ -1,0 +1,134 @@
+/* General */
+body{
+  background: linear-gradient(0deg, #1BBC9B, #1EA5B5 100%) no-repeat;
+}
+.debug{
+  height: 200px;
+  background-color: darkred;
+}
+[class*="col-"] {
+  border: 1px solid black;
+  /* height: 100px; */
+}
+.row{
+  /* background-color: yellow; */
+}
+
+ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 10px;
+}
+ul li a{
+  text-decoration: underline;
+  color: #1D83C1;
+}
+
+/* Header */
+header{
+  background-color: #1137B5;
+  color: #1D83C1;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.nav-bar{
+  margin-top: 20px;
+}
+
+
+/* Main */
+
+/* Sezione Principale */
+.sezione-principale p{
+  text-align: justify;
+}
+.sezione-principale img{
+  width: 100%;
+  object-fit: contain;
+  margin-top: 71px;
+
+}
+
+/* Sezione Chi Sono */
+#chi_sono h2{
+  font-size: 30px;
+}
+#chi_sono p{
+  font-size: 20px;
+}
+
+#chi_sono img{
+  height: 400px;
+  object-fit: contain;
+}
+
+#chi_sono span{
+  margin-left: 15px;
+  font-size: 25px;
+}
+#chi_sono .col-lg-4 ul li{
+  list-style: circle;
+  font-size: 15px;
+}
+
+.prima-row{
+  margin-top: 71px;
+}
+.seconda-row{
+  margin: 50px 0px;
+}
+
+
+
+/* Sezione Foto */
+#foto .foto-sezione-violino,
+#foto .foto-sezione-varie{
+  height: 250px;
+  width: 50%;
+  border: 1px solid orange;
+  margin: auto;
+  text-align: center;
+}
+
+#foto .foto-sezione-violino img,
+#foto .foto-sezione-varie img{
+  height: 85%;
+  object-fit: contain;
+}
+
+#foto .foto-nascoste-violino .foto{
+  height: 250px;
+  /* display: none; */
+}
+
+
+#foto .foto-nascoste-violino .foto img{
+  height: 100%;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* a:hover + .foto-nascoste-violino{
+  display: block;
+} */
+
+
+
+.nascosto{
+  display: none;
+
+}
+#hov:hover + .nascosto{
+  display: block;
+}
+
+
+/* Footer */
+footer i{
+  color: #1D83C1;
+}
+footer i.fa-instagram{
+  margin-left: -45px;
+}
