@@ -71,6 +71,7 @@ header{
 #chi_sono .col-lg-4 ul li{
   list-style: circle;
   font-size: 15px;
+  display: block;
 }
 
 .prima-row{
@@ -131,4 +132,28 @@ footer i{
 }
 footer i.fa-instagram{
   margin-left: -45px;
+}
+
+
+/* Media Query */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #chi_sono .prima-immagine,
+  #chi_sono .seconda-immagine{
+    height: 375px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .sezione-principale img{
+    margin-top: 110px;
+  }
+  #chi_sono .prima-immagine,
+  #chi_sono .seconda-immagine{
+    height: 450px;
+    object-fit: contain;
+  }
+  p{
+    text-align: justify;
+  }
 }
