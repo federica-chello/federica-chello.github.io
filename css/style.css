@@ -1,18 +1,9 @@
 /* General */
-body{
-  background: linear-gradient(0deg, #1BBC9B, #1EA5B5 100%) no-repeat;
-}
-.debug{
-  height: 200px;
-  background-color: darkred;
-}
 [class*="col-"] {
   /* border: 1px solid black; */
   /* height: 100px; */
 }
-.row{
-  /* background-color: yellow; */
-}
+
 
 ul li{
   display: inline-block;
@@ -24,6 +15,7 @@ ul li a{
   color: #1D83C1;
 }
 
+
 /* Header */
 header{
   background-color: #1137B5;
@@ -32,26 +24,39 @@ header{
   z-index: 1;
   width: 100%;
 }
-
-.nav-bar{
-  margin-top: 20px;
+header h4{
+  padding: 10px 0px;
 }
-
+.nav-bar{
+  margin-top: 30px;
+}
+.icona-menu{
+  display: none;
+}
 
 /* Main */
 
-/* Sezione Principale */
-.sezione-principale p{
+/* Home */
+#home{
+  background-color: lightblue;
+  padding-bottom: 30px;
+}
+#home p{
   text-align: justify;
 }
-.sezione-principale img{
+#home img{
   width: 100%;
   object-fit: contain;
-  margin-top: 71px;
-
+  margin-top: 100px;
+  padding-top: 25px;
 }
 
+
+
 /* Sezione Chi Sono */
+#chi_sono{
+  /* background-color: #1D83C1; */
+}
 #chi_sono h2{
   font-size: 30px;
 }
@@ -60,73 +65,41 @@ header{
 }
 
 #chi_sono img{
-  height: 400px;
+  height: 350px;
   object-fit: contain;
 }
 
 #chi_sono span{
-  margin-left: 15px;
+  /* margin-left: 15px; */
   font-size: 25px;
 }
-#chi_sono .col-lg-4 ul li{
+#chi_sono .seconda-row ul li{
   list-style: circle;
   font-size: 15px;
   display: block;
+  margin-left: -15px;
 }
 
 .prima-row{
-  margin-top: 71px;
+  padding-top: 50px;
+  padding-bottom: 25px;
+  background-color: #1D83C1;
 }
 .seconda-row{
-  margin: 50px 0px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: lightblue;
+}
+.terza-row{
+  padding-top: 25px;
+  padding-bottom: 50px;
+  background-color: #1D83C1;
 }
 
-
-
-/* Sezione Foto */
-#foto .foto-sezione-violino,
-#foto .foto-sezione-varie{
-  height: 250px;
-  width: 50%;
-  border: 1px solid orange;
-  margin: auto;
-  text-align: center;
+/* Header */
+footer{
+  background-color: #1137B5;
 }
-
-#foto .foto-sezione-violino img,
-#foto .foto-sezione-varie img{
-  height: 85%;
-  object-fit: contain;
-}
-
-#foto .foto-nascoste-violino .foto{
-  height: 250px;
-  /* display: none; */
-}
-
-
-#foto .foto-nascoste-violino .foto img{
-  height: 100%;
-  object-fit: contain;
-  padding: 10px;
-}
-
-/* a:hover + .foto-nascoste-violino{
-  display: block;
-} */
-
-
-
-.nascosto{
-  display: none;
-
-}
-#hov:hover + .nascosto{
-  display: block;
-}
-
-
-/* Footer */
 footer i{
   color: #1D83C1;
 }
@@ -135,34 +108,16 @@ footer i.fa-instagram{
 }
 
 
+
+
 /* Media Query */
+
+/* Media Query MD */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  #chi_sono .prima-immagine,
-  #chi_sono .seconda-immagine{
-    height: 375px;
-    object-fit: contain;
-  }
-}
 
-@media screen and (max-width: 991px) {
-
-  header h1{
-    font-size: 45px;
-  }
-  header .menu-hamburger{
-    font-size: 30px;
-  }
-
-  .sezione-principale img{
-    margin-top: 69px;
-  }
-  #chi_sono .prima-immagine,
-  #chi_sono .seconda-immagine{
-    height: 450px;
-    object-fit: contain;
-  }
-  p{
-    text-align: justify;
+  /* Header */
+  .icona-menu{
+    display: block;
   }
   .nav-orizzontale li{
     display: block;
@@ -172,11 +127,189 @@ footer i.fa-instagram{
   .menu-hamburger{
     text-align: right;
     font-size: 25px;
+    margin-right: 15px;
   }
   .nav-orizzontale{
     display: none;
   }
-  a:focus + .nav-orizzontale {
+  a.icona-menu:focus + .nav-orizzontale {
     display: block;
   }
+
+  header h1{
+    font-size: 45px;
+  }
+  header .icona-menu{
+    font-size: 35px;
+  }
+  header ul li{
+    margin: 10px 10px 10px 0px;
+  }
+  header ul li a{
+    font-size: 20px;
+  }
+
+  .menu-hamburger i{
+    margin-left: 15px;
+  }
+  /* Header (fine) */
+
+  /* Main */
+  /* Home */
+  #home img{
+    margin-top: 110px;
+  }
+
+  /* Home (fine) */
+
+  /* Main (fine) */
 }
+
+/* Media Query SM */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  /* Header */
+  .icona-menu{
+    display: block;
+  }
+  .nav-orizzontale li{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+  }
+  .menu-hamburger{
+    text-align: right;
+    font-size: 25px;
+    margin-right: 15px;
+  }
+  .nav-orizzontale{
+    display: none;
+  }
+  a.icona-menu:focus + .nav-orizzontale {
+    display: block;
+  }
+
+  header h1{
+    font-size: 45px;
+    white-space: nowrap;
+  }
+  header .icona-menu{
+    font-size: 35px;
+  }
+  header ul li{
+    margin: 10px 10px 10px 0px;
+  }
+  header ul li a{
+    font-size: 20px;
+  }
+
+  .menu-hamburger i{
+    margin-left: 15px;
+  }
+  /* Header (fine) */
+
+  /* * Main * */
+  /* Home */
+  #home img{
+    margin-top: 110px;
+  }
+
+
+  #chi_sono .prima-row h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  #chi_sono .prima-row .primo-paragrafo p{
+    width: 60%;
+    margin: auto;
+    text-align: justify;
+    padding: 30px 0px;
+  }
+
+  #chi_sono .seconda-row span{
+    font-size: 35px;
+  }
+
+  /* Home (fine) */
+
+  /* Main (fine) */
+}
+
+/* Media Query XS */
+@media screen and (max-width: 767px) {
+
+  /* Header */
+  .icona-menu{
+    display: block;
+  }
+  .nav-orizzontale li{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+  }
+  .menu-hamburger{
+    text-align: right;
+    font-size: 25px;
+    margin-right: 15px;
+  }
+  .nav-orizzontale{
+    display: none;
+  }
+  a.icona-menu:focus + .nav-orizzontale {
+    display: block;
+  }
+
+  header h1{
+    font-size: 60px;
+    text-align: center;
+  }
+  header h4{
+    font-size: 25px;
+    text-align: center;
+  }
+  header .icona-menu{
+    font-size: 35px;
+  }
+  header ul li{
+    margin: 10px 10px 10px 0px;
+  }
+  header ul li a{
+    font-size: 20px;
+  }
+
+  .menu-hamburger i{
+    margin-left: 15px;
+  }
+  /* Header (fine) */
+
+  /* * Main * */
+  /* Home */
+  #home img{
+    margin-top: 209px;
+  }
+
+
+
+  /* Home (fine) */
+
+  /* Main (fine) */
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Query Main */
+
+/* Media Query Main (Fine) */
+
+
+/* @media screen and (min-width: 992px) and (max-width: 1199px) {
+
+} */
