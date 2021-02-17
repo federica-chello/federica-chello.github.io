@@ -1,11 +1,11 @@
 /* General */
 [class*="col-"] {
-  /* border: 1px solid black; */
+  border: 1px solid black;
   /* height: 100px; */
 }
 
 
-ul li{
+/* ul li{
   display: inline-block;
   list-style: none;
   margin: 0px 10px;
@@ -13,7 +13,7 @@ ul li{
 ul li a{
   text-decoration: underline;
   color: #1D83C1;
-}
+} */
 
 
 /* Header */
@@ -23,6 +23,15 @@ header{
   position: fixed;
   z-index: 1;
   width: 100%;
+}
+header ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 10px;
+}
+header ul li a{
+  text-decoration: underline;
+  color: #1D83C1;
 }
 header h4{
   padding: 10px 0px;
@@ -54,9 +63,6 @@ header h4{
 
 
 /* Sezione Chi Sono */
-#chi_sono{
-  /* background-color: #1D83C1; */
-}
 #chi_sono h2{
   font-size: 30px;
 }
@@ -70,14 +76,13 @@ header h4{
 }
 
 #chi_sono span{
-  /* margin-left: 15px; */
   font-size: 25px;
 }
 #chi_sono .seconda-row ul li{
-  list-style: circle;
+  display: inline-block;
+  list-style: none;
   font-size: 15px;
   display: block;
-  margin-left: -15px;
 }
 
 .prima-row{
@@ -96,6 +101,14 @@ header h4{
   background-color: #1D83C1;
 }
 
+/* Esperienza */
+#esperienza .prima-riga{
+  background-color: lightblue;
+}
+#esperienza .seconda-riga{
+  background-color: #1D83C1;
+}
+
 /* Header */
 footer{
   background-color: #1137B5;
@@ -105,6 +118,15 @@ footer i{
 }
 footer i.fa-instagram{
   margin-left: -45px;
+}
+footer ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 0px 10px;
+}
+footer ul li a{
+  text-decoration: underline;
+  color: #1D83C1;
 }
 
 
@@ -202,6 +224,7 @@ footer i.fa-instagram{
   header ul li a{
     font-size: 20px;
   }
+
 
   .menu-hamburger i{
     margin-left: 15px;
